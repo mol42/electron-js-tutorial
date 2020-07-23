@@ -1,3 +1,8 @@
+// renderer process tarafında NodeJS entegrasyonu
+// açtığımız zaman require yardımıc ile NodeJS ile
+// varsayılan gelen kütüphanelere erişebiliyoruz
+// hatta node_modules altında gelen kütüphanelere de
+// erişebiliyoruz !
 const fs = require("fs");
 
 fs.open("www/index.html", "r", (err, fd) => {
